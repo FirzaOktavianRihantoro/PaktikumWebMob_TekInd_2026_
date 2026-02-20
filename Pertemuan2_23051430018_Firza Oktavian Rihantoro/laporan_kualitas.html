@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Inspeksi Kualitas</title>
+    <link rel="stylesheet" href="laporan_kualitas.css">
+</head>
+<body>
+
+    <div id="container">
+
+        <h1>Laporan Inspeksi Kualitas</h1>
+
+        <form action="">
+
+            <label for="id_produk">ID Produk:</label>
+            <input type="text" id="id_produk" name="id_produk" required>
+
+            <label for="inspektur">Nama Inspektur:</label>
+            <input type="text" id="inspektur" name="inspektur" required>
+
+            <label>Jenis Cacat:</label>
+            <div class="radio-group">
+                <input type="radio" id="geometri" name="jenis_cacat" value="Geometri">
+                <label for="geometri">Geometri</label>
+
+                <input type="radio" id="permukaan" name="jenis_cacat" value="Permukaan">
+                <label for="permukaan">Permukaan</label>
+
+                <input type="radio" id="fungsional" name="jenis_cacat" value="Fungsional">
+                <label for="fungsional">Fungsional</label>
+            </div>
+
+            <label for="jumlah_cacat">Jumlah Cacat:</label>
+            <input type="number" id="jumlah_cacat" name="jumlah_cacat" min="0">
+
+            <label for="foto">Foto Produk:</label>
+            <input type="file" id="foto" name="foto">
+
+            <button type="submit">Submit Laporan</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
