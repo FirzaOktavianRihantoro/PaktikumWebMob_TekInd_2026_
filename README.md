@@ -1,0 +1,1 @@
+# PaktikumWebMob_TekInd_2026_
