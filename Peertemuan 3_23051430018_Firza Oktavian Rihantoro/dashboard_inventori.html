@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Inventori</title>
+
+    <!-- Bootstrap CSS -->
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+    >
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">TekInd Systems</a>
+    </div>
+</nav>
+
+<div class="container mt-4">
+
+    <!-- Judul -->
+    <div class="row mb-4">
+        <div class="col-12">
+            <h2 class="text-center">Gudang Bahan Baku</h2>
+            <hr>
+        </div>
+    </div>
+
+    <!-- Layout Grid -->
+    <div class="row">
+
+        <!-- KIRI: Form Stok Masuk (4 Kolom) -->
+        <div class="col-md-4">
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    Form Stok Masuk
+                </div>
+                <div class="card-body">
+                    <form>
+
+                        <div class="mb-3">
+                            <label class="form-label">Nama Barang</label>
+                            <input 
+                                type="text" 
+                                class="form-control" 
+                                placeholder="Contoh: Gula Muanis"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Quantity</label>
+                            <input 
+                                type="number" 
+                                class="form-control"
+                                min="1"
+                                required
+                            >
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Supplier</label>
+                            <input 
+                                type="text" 
+                                class="form-control"
+                                placeholder="Nama Supplier"
+                                required
+                            >
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            Simpan Data
+                        </button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- KANAN: Tabel Stok (8 Kolom) -->
+        <div class="col-md-8">
+            <div class="card shadow-sm">
+                <div class="card-header bg-secondary text-white">
+                    Tabel Stok Saat Ini
+                </div>
+                <div class="card-body">
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>No</th>
+                                    <th>Nama Barang</th>
+                                    <th>Stok</th>
+                                    <th>Supplier</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Etanol 10%</td>
+                                    <td>500</td>
+                                    <td>PT Lil Bah Kesungkur</td>
+                                    <td><span class="badge bg-success">Tersedia</span></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Makan Beracun Gratis</td>
+                                    <td>75</td>
+                                    <td>CV Wowo Fluffy Sejahtera</td>
+                                    <td><span class="badge bg-warning">Menipis</span></td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Gula Muanis</td>
+                                    <td>0</td>
+                                    <td>PT Niga Ngawi Jaya</td>
+                                    <td><span class="badge bg-danger">Habis</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
