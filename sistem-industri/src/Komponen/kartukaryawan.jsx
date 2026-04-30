@@ -10,4 +10,4 @@ function KartuKaryawan({ nama, jabatan, bagian }) {
   );
 }
 
-export default KartuKaryawan;
+export default KartuKaryawan;``
