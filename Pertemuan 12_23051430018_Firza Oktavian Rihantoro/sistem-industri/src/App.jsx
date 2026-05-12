@@ -12,7 +12,7 @@ import Navbar from './Komponen/Navbar';
 import Sidebar from './Komponen/Sidebar';
 
 import KartuMesin from './Komponen/KartuMesin';
-import KartuKaryawan from './Komponen/KartuKaryawan';
+import KartuKaryawan from './Komponen/iclix';
 import CounterProduksi from './Komponen/CounterProduksi';
 import JamDigital from './Komponen/JamDigital';
 import KalkulatorOEE from './Komponen/KalkulatorOEE';
